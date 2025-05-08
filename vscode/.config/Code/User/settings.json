@@ -1,0 +1,80 @@
+{
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "vim.enableNeovim": true,
+    "vim.normalModeKeyBindings": [], 
+
+    "editor.lineNumbers": "relative",
+
+    "vim.leader": "<Space>", 
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Navigation
+        { "before": ["<S-h>"], "commands": [":bprevious"]},
+        { "before": ["<S-l>"], "commands": [":bnext"]}, 
+        
+        // splits
+        { "before": ["leader", "v"], "commands": [":vsplit"]}, 
+        { "before": ["leader", "s"], "commands": [":split"]}, 
+
+        // panes 
+
+        {
+            "before": ["leader", "h"], 
+            "commands": ["workbench.action.focusLeftGroup"]
+        },   
+        {
+            "before": ["leader", "j"], 
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["leader", "k"], 
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["leader", "l"], 
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+
+        // FILE TREE
+
+        {
+            "before": ["leader", "n", "e"], 
+            "commands": ["workbench.explorer.fileView.focus"]
+        }, 
+
+        // NICE TO HAVE 
+
+        {
+            "before": ["leader", "w"],
+            "commands": ["workbench.action.files.save"]
+        }, 
+        {
+            "before": ["leader", "f"],
+            "commands": ["workbench.action.quickopen"]
+        }, 
+
+    ], 
+
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indexing 
+        {"before": ["<"], "commands": ["editor.action.outdentLines"]},
+        {"before": [">"], "commands": ["editor.action.indentLines"]},
+        {"before": ["J"], "commands": ["editor.action.moveLinesDownAction"]}, 
+        {"before": ["K"], "commands": ["editor.action.moveLinesUpAction"]}, 
+        {"before": ["leader", "c"], "commands": ["editor.action.commentLine"]}, 
+        
+    ]
+}
