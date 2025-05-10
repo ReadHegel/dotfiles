@@ -12,3 +12,4 @@ if [ -f ./.bash_aliases ]; then
 fi
 
 PS1='[\u@\h \W]\$ '
+eval "$(oh-my-posh init bash --config ~/.config/ohmyposh/config.json)"
