@@ -1,0 +1,17 @@
+neovim
+networkmanager
+hyprland
+kitty
+noto-fonts
+git
+firefox
+nautilus
+stow
+oh-my-posh
+wofi 
+waybar
+hyprpaper
+wlogout
+hyprshot
+clipman
+ttf-jetbrains-mono-nerd
