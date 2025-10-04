@@ -9,7 +9,7 @@
     "scroll-step": 5,
     "format": "{icon} {volume}%",
     "format-muted": "󰝟 {volume}%",
-    "on-click":"kitty -- alsamixer -V all",
+    "on-click": "pwvucontrol",
     "format-icons": {
       "default": ["", "", ""]
     }
