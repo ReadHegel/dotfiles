@@ -1,2 +1,9 @@
 .gitmodules
 README.md
+
+^\.git$
+
+\.git
+\.gitignore
+\.gitmodules
+

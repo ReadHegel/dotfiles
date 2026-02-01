@@ -75,6 +75,8 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:zd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:ls:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:eza:*' fzf-preview 'ls --color $realpath'
 
 
 # Shell integrations
