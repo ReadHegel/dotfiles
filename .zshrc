@@ -66,6 +66,7 @@ setopt hist_find_no_dups
 
 # Aliases
 source ~/.local/share/omarchy/default/bash/aliases
+alias la='ls -a'
 
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
