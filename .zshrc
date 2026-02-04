@@ -83,3 +83,10 @@ zstyle ':fzf-tab:complete:eza:*' fzf-preview 'ls --color $realpath'
 eval "$(fzf --zsh)"
 # eval "$(zoxide init --cmd cd zsh)"
 eval "$(zoxide init zsh)"
+
+# Custom commeds
+function fuzzyvim() {
+    fzf --reverse --multi --select-1 --exit-0 --bind 'enter:become(nvim {})'
+}
+
+bindkey -s '^F' "fuzzyvim\n"
